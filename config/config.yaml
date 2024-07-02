@@ -3,8 +3,8 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://drive.google.com/file/d/1FxL7t9xGRzjkquiOGra1FI5BLS-d-Dge/view?usp=sharing
-  local_data_file: artifacts/data_ingestion/data.zip
+  source_URL: https://drive.google.com/file/d/10AHFBJOPny856gtGjXmoVrq9_OucsXhI/view?usp=drive_link
+  local_data_file: artifacts/data_ingestion/data.rar
   unzip_dir: artifacts/data_ingestion
 
 
@@ -12,3 +12,7 @@ prepare_base_model:
   root_dir: artifacts/prepare_base_model
   base_model_path: artifacts/prepare_base_model/base_model.h5
   updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5

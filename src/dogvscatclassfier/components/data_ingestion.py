@@ -1,5 +1,5 @@
 import os
-import zipfile
+import aspose.zip as az
 import gdown
 from src.dogvscatclassfier import logger
 from src.dogvscatclassfier.utils.common import get_size
@@ -42,5 +42,5 @@ class DataIngestion:
         """
         unzip_path = self.config.unzip_dir
         os.makedirs(unzip_path, exist_ok=True)
-        with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
-            zip_ref.extractall(unzip_path)
+        with az.rar.RarArchive(self.config.local_data_file) as archive:
+            archive.extract_to_directory(unzip_path)

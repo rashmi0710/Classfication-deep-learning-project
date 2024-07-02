@@ -1,6 +1,7 @@
 from src.dogvscatclassfier import logger
 from src.dogvscatclassfier.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from src.dogvscatclassfier.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
+from src.dogvscatclassfier.pipeline.stage_03_model_training import ModelTrainingPipeline
 
 STAGE_NAME = "Data Ingestion stage"
 try:

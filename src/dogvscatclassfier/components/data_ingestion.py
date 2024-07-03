@@ -3,7 +3,7 @@ import aspose.zip as az
 import gdown
 from src.dogvscatclassfier import logger
 from src.dogvscatclassfier.utils.common import get_size
-from src.dogvscatclassfier.entity.config_entity import (DataIngestionConfig)
+from src.dogvscatclassfier.entity.config_entity import DataIngestionConfig
 
 
 

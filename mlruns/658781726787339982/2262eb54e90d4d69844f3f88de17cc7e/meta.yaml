@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/mjourFinalPorject/mlruns/658781726787339982/2262eb54e90d4d69844f3f88de17cc7e/artifacts
+end_time: 1720068339513
+entry_point_name: ''
+experiment_id: '658781726787339982'
+lifecycle_stage: active
+run_id: 2262eb54e90d4d69844f3f88de17cc7e
+run_name: abundant-donkey-623
+run_uuid: 2262eb54e90d4d69844f3f88de17cc7e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720068320910
+status: 3
+tags: []
+user_id: dongr

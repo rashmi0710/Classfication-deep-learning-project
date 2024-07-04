@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/mjourFinalPorject/mlruns/658781726787339982/e864b3a912714da48e92124244036abf/artifacts
+end_time: 1720069103582
+entry_point_name: ''
+experiment_id: '658781726787339982'
+lifecycle_stage: active
+run_id: e864b3a912714da48e92124244036abf
+run_name: fun-kit-491
+run_uuid: e864b3a912714da48e92124244036abf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1720069085343
+status: 3
+tags: []
+user_id: dongr

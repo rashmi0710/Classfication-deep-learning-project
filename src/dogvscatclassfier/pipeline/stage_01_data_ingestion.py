@@ -1,3 +1,10 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+
+
+
 from src.dogvscatclassfier.config.configuration import ConfigurationManager
 from src.dogvscatclassfier.components.data_ingestion import DataIngestion
 from src.dogvscatclassfier import logger

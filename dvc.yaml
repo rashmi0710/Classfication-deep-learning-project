@@ -1,12 +1,11 @@
 stages:
   data_ingestion:
-    cmd: python run src/dogvscatclassfier/pipeline/stage_01_data_ingestion.py
+    cmd: python src/dogvscatclassfier/pipeline/stage_01_data_ingestion.py
     deps:
       - src/dogvscatclassfier/pipeline/stage_01_data_ingestion.py
       - config/config.yaml
     outs:
       - artifacts/data_ingestion/data
-
 
   prepare_base_model:
     cmd: python src/dogvscatclassfier/pipeline/stage_02_prepare_base_model.py
@@ -22,13 +21,13 @@ stages:
     outs:
       - artifacts/prepare_base_model
 
-
   training:
     cmd: python src/dogvscatclassfier/pipeline/stage_03_model_training.py
     deps:
       - src/dogvscatclassfier/pipeline/stage_03_model_training.py
       - config/config.yaml
-      - artifacts/data_ingestion/data      - artifacts/prepare_base_model
+      - artifacts/data_ingestion/data
+      - artifacts/prepare_base_model
     params:
       - IMAGE_SIZE
       - EPOCHS
@@ -36,7 +35,6 @@ stages:
       - AUGMENTATION
     outs:
       - artifacts/training/model.h5
-
 
   evaluation:
     cmd: python src/dogvscatclassfier/pipeline/stage_04_model_evaluation.py
@@ -49,5 +47,5 @@ stages:
       - IMAGE_SIZE
       - BATCH_SIZE
     metrics:
-    - scores.json:
-        cache: false
+      - scores.json:
+          cache: false

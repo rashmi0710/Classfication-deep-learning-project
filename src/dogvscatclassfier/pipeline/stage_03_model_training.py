@@ -2,7 +2,8 @@ from src.dogvscatclassfier.config.configuration import ConfigurationManager
 from src.dogvscatclassfier.components.model_training import Training
 from src.dogvscatclassfier import logger
 
-
+import sys
+sys.path.append('D:/mjourFinalPorject/src')
 
 STAGE_NAME = "Training"
 

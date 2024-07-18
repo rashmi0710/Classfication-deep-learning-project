@@ -25,7 +25,7 @@ bleach==6.1.0
 blinker==1.8.2
 cachetools==5.3.3
 celery==5.4.0
-certifi==2024.6.2
+certifi==2024.7.4
 cffi==1.16.0
 charset-normalizer==3.3.2
 click==8.1.7
@@ -126,7 +126,7 @@ matplotlib==3.9.0
 matplotlib-inline==0.1.7
 mdurl==0.1.2
 mistune==3.0.2
-mlflow==2.2.2
+mlflow==2.14.2
 multidict==6.0.5
 nbclient==0.10.0
 nbconvert==7.16.4
@@ -154,7 +154,7 @@ prompt_toolkit==3.0.47
 protobuf==3.19.6
 psutil==6.0.0
 pure-eval==0.2.2
-pyarrow==11.0.0
+pyarrow==14.0.1
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
 pycparser==2.22
@@ -210,7 +210,7 @@ tensorboard==2.10.1
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow-estimator==2.10.0
-tensorflow-gpu==2.10.0
+tensorflow-gpu==2.12.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.4.0
 terminado==0.18.1
